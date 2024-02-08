@@ -8,7 +8,8 @@ from alembic import context
 from src.config import settings
 from src.database import Base
 
-from src.models import User, ReferralCode
+from src.user.models import User    # noqa
+from src.referral_code.models import ReferralCode   # noqa
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
